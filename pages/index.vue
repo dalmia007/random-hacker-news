@@ -1,5 +1,8 @@
 <template>
-  <div>{{ storiesList }}</div>
+  <div>
+    <SimpleSpinner v-if="storiesList == null" />
+    {{ storiesList }}
+  </div>
 </template>
 
 <script>
@@ -7,10 +10,7 @@ export default {
   name: 'IndexPage',
   components: {},
   data() {
-    return {
-      isLoading: false,
-      stories: null,
-    }
+    return {}
   },
   computed: {
     storiesList() {
@@ -18,11 +18,9 @@ export default {
     },
   },
   created() {
-    this.isLoading = true
     if (this.$store.state.stories === null) {
       this.$store.dispatch('fetchStoriesAndAuthors')
     }
-    this.isLoading = false
   },
 }
 </script>
