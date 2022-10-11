@@ -1,7 +1,10 @@
 <template>
-  <div>
+  <div class="container">
     <SimpleSpinner v-if="storiesList == null" />
-    {{ storiesList }}
+    <div v-else>
+      <h1 class="title">Top Hacker News Stories</h1>
+      <StoryTile :stories="storiesList" />
+    </div>
   </div>
 </template>
 
@@ -24,3 +27,15 @@ export default {
   },
 }
 </script>
+<style>
+.container {
+  width: 100%;
+  max-width: 834px;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+</style>

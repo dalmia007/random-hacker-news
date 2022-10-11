@@ -1,1 +1,11 @@
-$bold-text: 500;
+//Grid
+$columns: 12;
+$gap: 30px;
+$breakpoints: (
+  mobile: '320px',
+  tablet: '640px',
+  laptop: '1024px',
+  desktop: '1280px',
+  desktopL: '1680px',
+  desktopXL: '1920px',
+);

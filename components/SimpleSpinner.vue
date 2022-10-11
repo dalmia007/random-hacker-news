@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="spinner">
     <svg
       width="300px"
       height="300px"
@@ -43,4 +43,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.spinner {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+</style>
