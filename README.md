@@ -7,6 +7,23 @@ This app displays 10 random stories from the top Hacker News API along with the 
 ![Screen Shot 2022-10-11 at 5 36 36 PM](https://user-images.githubusercontent.com/52538845/195085189-0b1901cf-2b79-4db8-ad9b-d375580c9926.png)
 
 
+## Tech Stack
+
+Vue 
+
+Vuex
+
+Nuxt
+
+SASS
+
+Javascript
+
+HTML
+
+CSS
+
+
 
 ## Build Setup
 
