@@ -15,6 +15,11 @@ export default {
   data() {
     return {}
   },
+  head() {
+    return {
+      title: 'Top Hacker News Stories',
+    }
+  },
   computed: {
     storiesList() {
       return this.$store.state.stories
